@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Inscripción universitaria</h1>
+ 
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+ 
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+ 
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="15" max="99" required>
+ 
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+ 
+            <label for="carrera">Carrera</label>
+            <select id="carrera" name="carrera" required>
+                <option value="">Selecciona una opción</option>
+                <option value="sistemas">Ingeniería de Sistemas</option>
+                <option value="industrial">Ingeniería Industrial</option>
+                <option value="administracion">Administración de Empresas</option>
+            </select>
+ 
+            <fieldset>
+                <legend>Género</legend>
+                <label>
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="otro"> Otro
+                </label>
+            </fieldset>
+ 
+            <fieldset>
+                <legend>Habilidades</legend>
+                <label>
+                    <input type="checkbox" name="habilidades" value="programacion"> Programación
+                </label>
+                <label>
+                    <input type="checkbox" name="habilidades" value="diseno"> Diseño
+                </label>
+                <label>
+                    <input type="checkbox" name="habilidades" value="idiomas"> Idiomas
+                </label>
+            </fieldset>
+ 
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+ 
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe algún comentario adicional"></textarea>
+ 
+            <button type="submit">Enviar inscripción</button>
+        </form>
+</body>
+</html>
