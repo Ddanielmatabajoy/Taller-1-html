@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Propiedad display</h1>
+ 
+    <h2>display: block</h2>
+    <div class="bloque">Div 1 (block)</div>
+    <div class="bloque">Div 2 (block)</div>
+ 
+    <h2>display: inline</h2>
+    <span class="linea">Span 1 (inline)</span>
+    <span class="linea">Span 2 (inline)</span>
+ 
+    <h2>display: inline-block</h2>
+    <div class="bloque-linea">Div (inline-block)</div>
+    <span class="linea-bloque">Span (inline-block)</span>
+ 
+    <h2>display: none</h2>
+    <div class="oculto">Este div no se ve porque tiene display: none</div>
+    <p>El texto de arriba está oculto en la página, pero sigue existiendo en el HTML.</p>
+ 
+    <h2>Diferencias observadas</h2>
+    <ul>
+        <li><strong>block:</strong> ocupa todo el ancho disponible y siempre empieza en una nueva línea.</li>
+        <li><strong>inline:</strong> solo ocupa el espacio de su contenido y se ubica en la misma línea que otros elementos; no acepta width/height.</li>
+        <li><strong>inline-block:</strong> se comporta como inline (se ubica en la misma línea) pero sí permite definir width y height como un block.</li>
+        <li><strong>none:</strong> el elemento desaparece por completo de la página, no ocupa espacio.</li>
+    </ul>
+</body>
+</html>
